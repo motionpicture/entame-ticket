@@ -19,10 +19,12 @@ import { PurchaseBaseComponent } from './components/pages/purchase/purchase-base
 import { PurchaseCompleteComponent } from './components/pages/purchase/purchase-complete/purchase-complete.component';
 import { PurchaseConfirmComponent } from './components/pages/purchase/purchase-confirm/purchase-confirm.component';
 import { AlertModalComponent } from './components/parts/alert-modal/alert-modal.component';
+import { ConfirmModalComponent } from './components/parts/confirm-modal/confirm-modal.component';
 import { FooterComponent } from './components/parts/footer/footer.component';
 import { HeaderComponent } from './components/parts/header/header.component';
 import { LoadingComponent } from './components/parts/loading/loading.component';
 import { PurchaseContentsComponent } from './components/parts/purchase-contents/purchase-contents.component';
+
 
 // tslint:disable-next-line:no-stateless-class
 @NgModule({
@@ -40,9 +42,11 @@ import { PurchaseContentsComponent } from './components/parts/purchase-contents/
         PurchaseContentsComponent,
         AlertModalComponent,
         LoadingComponent,
+        ConfirmModalComponent
     ],
     entryComponents: [
-        AlertModalComponent
+        AlertModalComponent,
+        ConfirmModalComponent
     ],
     imports: [
         BrowserModule,

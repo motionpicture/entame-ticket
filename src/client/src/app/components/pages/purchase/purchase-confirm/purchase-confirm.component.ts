@@ -20,7 +20,7 @@ export class PurchaseConfirmComponent implements OnInit {
     constructor(
         private router: Router,
         private mocoin: MocoinService,
-        private modal: NgbModal,
+        private modal: NgbModal
     ) { }
 
     public ngOnInit() {

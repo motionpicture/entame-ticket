@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MocoinService } from '../../../../services/mocoin/mocoin.service';
 
 @Component({
     selector: 'app-purchase-complete',
@@ -8,19 +7,9 @@ import { MocoinService } from '../../../../services/mocoin/mocoin.service';
 })
 export class PurchaseCompleteComponent implements OnInit {
 
-    constructor(
-        private mocoin: MocoinService
-    ) { }
+    constructor() { }
 
     public ngOnInit() {
-    }
-
-    public async signOut() {
-        try {
-            await this.mocoin.signOut();
-        } catch (err) {
-            console.error(err);
-        }
     }
 
 }
